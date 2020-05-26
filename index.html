@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Only for you</title>
+	<link rel="stylesheet" type="text/css" href="component-picture.css">
+	<link rel="stylesheet" type="text/css" href="component-black-disc.css">
+	<script src="https://kit.fontawesome.com/34949473b1.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		@font-face {
+		  font-family: "Dancing";
+		  src: url("Dacing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="contain-photo contain-photo-1">
+			<div class="photo">
+				<a href="#"></a>
+			</div>
+			<div class="title-of-photo">
+				<h2>MY PICTURE</h2>
+			</div>
+		</div>
+		<div class="contain-photo contain-photo-2">
+			<div class="photo">
+				<a href="#"></a>
+			</div>
+			<div class="title-of-photo">
+				<h2>MY PICTURE</h2>
+			</div>
+		</div><div class="contain-photo contain-photo-3">
+			<div class="photo">
+				<a href="#"></a>
+			</div>
+			<div class="title-of-photo">
+				<h2>MY PICTURE</h2>
+			</div>
+		</div><div class="contain-photo contain-photo-4">
+			<div class="photo">
+				<a href="#"></a>
+			</div>
+			<div class="title-of-photo">
+				<h2>MY PICTURE</h2>
+			</div>
+		</div>
+	</div><div class="contain-photo contain-photo-5">
+			<div class="photo">
+				<a href="#"></a>
+			</div>
+			<div class="title-of-photo">
+				<h2>MY PICTURE</h2>
+			</div>
+		</div>
+	</div>
+	<nav class="disc-item">
+		<span class="disc"></span>
+		<span class="disc"></span>
+		<span class="disc"></span>
+		<span class="disc"></span>
+		<span class="disc"></span>
+	</nav>
+	<script type="text/javascript">
+
+		const discs = document.querySelectorAll('.disc');
+		discs.forEach(disc => {
+			disc.addEventListener('click', () => {
+				discs.forEach(disc => {
+					disc.classList.remove('icon-show');
+					disc.innerHTML = '';
+					//document.classList.remove('show-photo');
+				});
+				disc.classList.add('icon-show');
+				// disc.classList.add('show-photo');
+				disc.innerHTML = '<i class="fas fa-sync-alt"></i>';
+			})
+		})
+
+	</script>
+</body>
+</html>
