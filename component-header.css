@@ -1,0 +1,44 @@
+.header {
+	width: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 20px 27px;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	position: relative;
+}
+
+.header	.contain-header {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+.text-title	{
+	float: left;
+}
+
+.option {
+	display: inline-block;
+}
+
+.drop-down {
+	display: none;
+	padding: 0px;
+	top: 65px;
+	right: 0px;
+	position: absolute;
+	background-color: #fff;
+	width: 200px;
+	list-style-type: none;
+}
+
+.drop-down li {
+	padding: 20px;
+	/*border:solid 1px #000;*/
+}
+
+.drop-down li a {
+	color: #f51351;
+}

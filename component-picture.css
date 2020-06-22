@@ -5,12 +5,21 @@
 body {
 	font-family: Arial, sans-serif;
 	background-color: #ddd;
+	background-image: url(https://media.doisongvietnam.vn/u/rootimage/editor/2020/02/26/20/05/exw510/c_510_300_0_7/exw1200/loi1582700728_6325.jpg);
+	background-size: 100%;
 }
 
-body, html {
-  height: 100%;
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	transition: all .3s linear;
 }
 
+h2 {
+	font-weight: 80;
+	color: #f51351;
+}
 
 .main {
 	position: relative;
@@ -23,8 +32,7 @@ body, html {
 .contain-photo {
 	width: 320px;
 	height: 360px;
-	position: relative;
-	display: inline-block;
+	margin: 80px auto;
 	background-color: #fff;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	box-sizing: border-box;
@@ -34,29 +42,66 @@ body, html {
 .contain-photo .photo {
 	background-position: center; 
 	background-repeat: no-repeat; 
-	background-size: 100% 100%;
+	background-size: 100%;
 	width: 240px;
 	height: 255px;
 }
 
-.contain-photo-1 {
-	background-image: url(https://img2.thuthuatphanmem.vn/uploads/2018/12/25/anh-dep-gai-xinh-nhu-bup-be_012857530.jpg);
+.photo-1 {
+	background-image: url(https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/104284652_1184579135207839_6507880045876871298_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=UsiqCu-9JMoAX8JEAAA&_nc_ht=scontent.fdad3-1.fna&oh=59c26f3033575f08445489791ca18a32&oe=5F148981);
+
 }
 
-.contain-photo-2 {
-	background-image: url(https://i.pinimg.com/originals/f3/60/31/f36031f081af4dcfd7f25476c7e9f56b.jpg);
+.photo-2 {
+	background-image: url(https://scontent.fdad3-3.fna.fbcdn.net/v/t1.0-9/83032896_1184579391874480_4671522128341997410_n.jpg?_nc_cat=107&_nc_sid=110474&_nc_ohc=MkohZzWn6MAAX_1QG6u&_nc_ht=scontent.fdad3-3.fna&oh=7f3a9d24e810a12ba920501e5ee55271&oe=5F157D61);
 }
 
-.contain-photo-3 {
-	background-image: url(https://i.pinimg.com/564x/46/03/56/4603568e91968a6907b8acadfd9ca7ed.jpg);
+.photo-3 {
+	background-image: url(https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/p843x403/70854172_944769592522129_4112781294474100736_o.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=nDlszNKJ-RwAX-imyxp&_nc_ht=scontent.fdad3-2.fna&_nc_tp=6&oh=1a1484741f926cb62809a72766b9d0d7&oe=5F1771E1);
 }
 
-.contain-photo-4 {
-	background-image: url(https://i.pinimg.com/564x/21/9b/a6/219ba694c3ae30253c0755618a23d116.jpg);
+.photo-4 {
+	background-image: url(https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/76688938_990243504641404_2175458019834331136_n.jpg?_nc_cat=101&_nc_sid=85a577&_nc_ohc=sh-hdJiG10wAX8vHFGA&_nc_ht=scontent.fdad3-2.fna&oh=bf2c46b764f8768c0d1132e29a6b3e9d&oe=5F185581);
 }
 
-.contain-photo-5 {
-	background-image: url(https://i.pinimg.com/564x/35/32/65/35326573d6fe5a6a20448c733b119f2b.jpg);
+.photo-5 {
+	background-image: url(https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/104152508_1184579351874484_1922305148472147670_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=bsfxwfEVP2kAX941iMV&_nc_ht=scontent.fdad3-1.fna&oh=2edcf61b157eb37f021f5c322af7a105&oe=5F156BB6);
+}
+
+.photo-6 {
+	background-image: url(https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/52797669_811979975801092_4682855232839876608_n.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=ogazCkJ3uXYAX8bLzme&_nc_ht=scontent.fdad3-1.fna&oh=e0b515f0f60681b795725abc75585d55&oe=5F14C4B1);
+}
+
+#photo2 {
+	transform: rotate(10deg);
+}
+
+#photo3 {
+	transform: rotate(20deg);
+}
+
+#photo4 {
+	transform: rotate(-20deg);
+}
+
+#photo5 {
+	transform: rotate(-10deg);
+}
+
+#photo6 {
+
+}
+
+.contain-photo {
+	display: none;
+}
+
+.disc1:target {
+	display: block;
+}
+
+.contain-photo:target {
+	display: block;
 }
 
 .contain-photo .title-of-photo {
@@ -65,6 +110,19 @@ body, html {
 	margin-top: 20px;
 }
 
-/*.show-photo {
+.wrapper-home {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	text-align: center;
+	display: inline-block;
+	background-image: url(https://scontent.fdad3-3.fna.fbcdn.net/v/t1.0-9/78160240_1012981775700910_3789730475992416256_n.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_ohc=53eGrtCAXRwAX-O_ULv&_nc_ht=scontent.fdad3-3.fna&oh=fcd0a15c4b65b6917d68f41318535f31&oe=5F181AC7);
+	overflow: hidden;
+}
 
-}*/
+.overlay {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
